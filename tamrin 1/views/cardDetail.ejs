@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>card Detail</title>
+</head>
+
+<body style="padding: 50px;">
+    <%- include('./header') %>
+
+        <div class="cards row mt-5 d-flex justify-content-center">
+
+
+            <div class="pages mt-3 col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" id="dvPreview" src=<%=user_id.avatar %> alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">id:
+                            <%=user_id.id %>
+                        </h5>
+                        <p class="card-text">email:
+                            <%=user_id.email %> <span></span></p>
+                        <p>name:
+                            <%= user_id.first_name %>
+                        </p>
+                        <p>last name:
+                            <%= user_id.last_name%>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- <script src="card.js"></script> -->
+</body>
+
+</html>
